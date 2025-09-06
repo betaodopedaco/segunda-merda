@@ -89,4 +89,85 @@
                     <li>Desenvolveu campanhas segmentadas para públicos específicos (noivos, colecionadores, investidores)</li>
                 </ul>
                 
-                <p class="section-text">O resultado foi um aumento de 45% no ag
+                <p class="section-text">O resultado foi um aumento de 45% no agendamento de consultas privadas e 30% no valor médio das vendas em um período de 6 meses.</p>
+                
+                <div class="highlight-box">
+                    <p>"A Grandiosidade Digital entendeu perfeitamente nossa essência e traduziu nossa excelência artesanal para o universo digital, atraindo exatamente o tipo de cliente que valoriza nosso trabalho." - Carlos Mendonça, diretor da Joalheria Real</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção 5 -->
+        <section class="diagonal-section">
+            <div class="section-content">
+                <h2 class="section-title">O Processo de <span class="gold-accent">Elevação</span> Digital</h2>
+                <p class="section-text">Nosso método exclusivo de trabalho é composto por 4 fases fundamentais:</p>
+                
+                <div class="grid-columns" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                    <div class="feature-card" style="position: relative;">
+                        <div class="process-number">1</div>
+                        <h3>Imersão</h3>
+                        <p>Compreensão profunda do negócio, valores, clientes e objetivos.</p>
+                    </div>
+                    
+                    <div class="feature-card" style="position: relative;">
+                        <div class="process-number">2</div>
+                        <h3>Estratégia</h3>
+                        <p>Desenvolvimento de plano personalizado com objetivos claros e mensuráveis.</p>
+                    </div>
+                    
+                    <div class="feature-card" style="position: relative;">
+                        <div class="process-number">3</div>
+                        <h3>Implementação</h3>
+                        <p>Execução com excelência de todas as ações definidas no plano estratégico.</p>
+                    </div>
+                    
+                    <div class="feature-card" style="position: relative;">
+                        <div class="process-number">4</div>
+                        <h3>Otimização</h3>
+                        <p>Ajustes contínuos baseados em dados e resultados para maximizar o retorno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="footer-logo">GRANDIOSIDADE DIGITAL</div>
+        <p class="footer-text">Transformando a presença digital de negócios exclusivos através de estratégias sofisticadas e personalizadas.</p>
+        
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        
+        <p style="margin-top: 3rem; opacity: 0.7;">&copy; 2023 Grandiosidade Digital. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Efeito de revelação suave ao rolar
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.diagonal-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(50px)';
+                section.style.transition = 'opacity 1s ease, transform 1s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
